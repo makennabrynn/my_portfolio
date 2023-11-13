@@ -1,0 +1,939 @@
+<!DOCTYPE html>
+<html>
+    <!-- paper background: url("https://www.transparenttextures.com/patterns/bedge-grunge.png")-->
+    <!-- wavy background: url("https://www.transparenttextures.com/patterns/cartographer.png") -->
+    <!-- grid background: url("https://www.transparenttextures.com/patterns/inflicted.png") -->
+<head>
+    <link rel="stylesheet" href="css/master.css">
+    <link href='https://fonts.googleapis.com/css?family=Italiana' rel='stylesheet'> <!-- 'Syne ' font-family: "Syne", sans-serif; -->
+    <link rel="stylesheet" href="https://use.typekit.net/nyl2acl.css"> <!-- ' gabriella ' font-family: "gabriella", sans-serif; -->
+    <link href='https://fonts.googleapis.com/css?family=Alexandria' rel='stylesheet'>
+<style> 
+a {
+  color: #c55c92;
+}
+.rect {
+  width: 1300px;
+  height: 500px;
+  border: 5px solid #2b2b2b;
+  border-style: dashed;
+  position: absolute;
+  top: 2800px;
+  left:60px;
+  bottom: 20px;
+}
+.bolded { 
+  font-weight: bold;
+  font-size: 30px;
+  background-color: rgba(255, 0, 166, 0.2);
+}
+html {
+  scroll-behavior: smooth;
+}
+/* HIGHLIGHTER */
+.rectangle {
+  animation: highlight 3s;
+}
+.rectangle2 {
+  animation: highlight2 4.5s;
+}
+.rectangle3 {
+  animation: highlight3 4s;
+  z-index: -2;
+}
+.rectangle4 {
+  animation: highlight4 4s;
+  z-index: -2;
+}
+
+@keyframes highlight {
+  from {
+    width: 0px
+  }
+  to {
+    width: 1050px
+  }
+}
+@keyframes highlight2 {
+  0%, 10%, 90%,
+  0% {
+    width: 0px
+  }
+  10% {
+    width: 0px
+  }
+  90% {
+    width: 1400px
+  }
+}
+@keyframes highlight3 {
+  0%, 30%, 90%,
+  0% {
+    width: 0px;
+    height: 30px;
+  }
+  30% {
+    width: 0px;
+    height: 30px;
+  }
+  90% {
+    width: 200px;
+  }
+}
+
+@keyframes highlight4 {
+  0%, 30%, 90%,
+  0% {
+    width: 0px;
+    height: 30px;
+  }
+  30% {
+    width: 0px;
+    height: 30px;
+  }
+  90% {
+    width: 180px;
+  }
+}
+
+svg {
+        position: absolute;
+        top: 330px;
+        left: 10px;
+        background-color: #FF1493;
+        /* transform: rotate(-40deg); */
+        z-index: 0;
+      }
+
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Roboto+Mono:ital@0;1&family=Syne:wght@600;800&display=swap');
+
+/* hi ny name is (animation) */
+    .container2 {
+
+    animation: transitionIn 1.5s;
+    }
+
+    @keyframes transitionIn {
+    from {
+        position: absolute;
+        top: -25px;
+        left: 0px;
+        right: 30px;
+        opacity: 0;
+        transform: rotateX(-10deg);
+    }
+
+    to {
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        right: 30px;
+        opacity: 1;
+        transform: rotateX(0deg)
+    }
+    }
+
+
+/* buttons (animation) */
+      .container5 {
+        animation: transitionIn5 1.5s;
+      }
+      @keyframes transitionIn5 {
+      from {
+          position: absolute;
+          top: -25px;
+          opacity: 0;
+      }
+
+      to {
+          position: absolute;
+          top: 8px;
+          opacity: 1;
+      }
+      }
+
+/* makenna  (animation) */
+    .container3 {
+    animation: transitionIn2 1.5s;
+    }
+    @keyframes transitionIn2 {
+    from {
+        position: absolute;
+        top: -25px;
+        left: 0px;
+        right: 30px;
+        opacity: 0;
+        transform: rotateX(-10deg);
+    }
+
+    to {
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        right: 30px;
+        opacity: 1;
+        transform: rotateX(0deg)
+    }
+    }
+
+
+/* bio (animation) */
+    .container4 {
+
+    animation: transitionIn3 1.5s;
+    }
+    @keyframes transitionIn3 {
+    from {
+        position: absolute;
+        top: -25px;
+        left: 0px;
+        right: 30px;
+        opacity: 0;
+        transform: rotateX(-10deg);
+    }
+
+    to {
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        right: 30px;
+        opacity: 1;
+        transform: rotateX(0deg)
+    }
+
+    }
+
+
+/* google font url */
+    @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Syne:wght@800&display=swap');
+
+
+/* makenna */
+h2 {
+      color: whitesmoke;
+      /* background-color: #FF1493; */
+      /* border: 2px solid #111; */
+      text-align: left;
+      line-height: 1.5;
+      background-position: right bottom, left top;
+      background-repeat: no-repeat, repeat;
+      padding: 15px;
+      font-family: "gabriella", sans-serif;
+      font-size: 122px;
+      text-shadow: -7px 7px #2b2b2b;
+      -webkit-text-stroke: 2px black;
+      letter-spacing: -15px;
+      transition: width 2s, height 4s;
+      position:absolute;
+      top: 150px;
+      left: 5px; 
+    }
+
+
+/* BUTTONS */
+/* contact button */
+      .button-56 {
+        align-items: center;
+        background-color: whitesmoke;
+        border: 2px solid #111;
+        border-radius: 8px;
+        box-sizing: border-box;
+        color: #2b2b2b;
+        cursor: pointer;
+        display: flex;
+        font-family: "Roboto Mono", sans-serif;
+        font-size: 25px;
+        height: 48px;
+        top: 15px;
+        left: 1206px;
+        justify-content: center;
+        line-height: 24px;
+        max-width: 100%;
+        padding: 0 25px;
+        position: relative;
+        text-align: center;
+        text-decoration: none;
+        user-select: none;
+        -webkit-user-select: none;
+        touch-action: manipulation;
+      }
+
+      .button-56:after {
+        background-color: #2b2b2b;
+        border-radius: 8px;
+        content: "";
+        display: block;
+        height: 48px;
+        left: 0;
+        width: 100%;
+        position: absolute;
+        top: -2px;
+        transform: translate(8px, 8px);
+        transition: transform .2s ease-out;
+        z-index: -1;
+      }
+
+      .button-56:hover:after {
+        transform: translate(0, 0);
+      }
+
+      .button-56:active {
+        background-color: #ffdeda;
+        outline: 0;
+      }
+
+      .button-56:hover {
+        outline: 0;
+      }
+
+      @media (min-width: 768px) {
+        .button-56 {
+          padding: 0 40px;
+        }
+      }
+
+
+      /* about me button */
+      .button-57 {
+        align-items: center;
+        background-color: whitesmoke;
+        border: 2px solid #111;
+        border-radius: 8px;
+        box-sizing: border-box;
+        color: #2b2b2b;
+        cursor: pointer;
+        display: flex;
+        font-family: "Roboto Mono", sans-serif;
+        font-size: 25px;
+        height: 48px;
+        top: -33px;
+        left: 950px;
+        justify-content: center;
+        line-height: 24px;
+        max-width: 100%;
+        padding: 0 25px;
+        position: relative;
+        text-align: center;
+        text-decoration: none;
+        user-select: none;
+        -webkit-user-select: none;
+        touch-action: manipulation;
+        
+      }
+
+      .button-57:after {
+        background-color: #2b2b2b;
+        border-radius: 8px;
+        content: "";
+        display: block;
+        height: 48px;
+        left: 0;
+        width: 100%;
+        position: absolute;
+        top: -2px;
+        transform: translate(8px, 8px);
+        transition: transform .2s ease-out;
+        z-index: -1;
+      }
+
+      .button-57:hover:after {
+        transform: translate(0, 0);
+      }
+
+      .button-57:active {
+        background-color: #ffdeda;
+        outline: 0;
+      }
+
+      .button-57:hover {
+        outline: 0;
+      }
+
+      @media (min-width: 768px) {
+        .button-57 {
+          padding: 0 40px;
+        }
+      }
+
+      /* me :) button */
+      .button-58 {
+        align-items: center;
+        background-color: whitesmoke;
+        border: 2px solid #111;
+        border-radius: 8px;
+        box-sizing: border-box;
+        color: #2b2b2b;
+        cursor: pointer;
+        display: flex;
+        font-family: "Roboto Mono", sans-serif;
+        font-size: 25px;
+        height: 48px;
+        top: -81px;
+        left: 20px;
+        justify-content: center;
+        line-height: 24px;
+        max-width: 100%;
+        padding: 0 25px;
+        position: relative;
+        text-align: center;
+        text-decoration: none;
+        user-select: none;
+        -webkit-user-select: none;
+        touch-action: manipulation;
+      }
+
+      .button-58:after {
+        background-color: #2b2b2b;
+        border-radius: 8px;
+        content: "";
+        display: block;
+        height: 48px;
+        left: 0;
+        width: 100%;
+        position: absolute;
+        top: -2px;
+        transform: translate(8px, 8px);
+        transition: transform .2s ease-out;
+        z-index: -1;
+      }
+
+      .button-58:hover:after {
+        transform: translate(0, 0);
+      }
+
+      .button-58:active {
+        background-color: #ffdeda;
+        outline: 0;
+      }
+
+      .button-58:hover {
+        outline: 0;
+      }
+
+      @media (min-width: 768px) {
+        .button-58 {
+          padding: 0 40px;
+        }
+
+      p6 {
+        background-color: whitesmoke;
+        border: 2px solid #111;
+        right: 40px;
+        position: absolute;
+        top: 900px;
+        font-family: "Roboto Mono", sans-serif;
+        font-size: 25px;
+        left: 40px;
+        line-height: 40px;
+        padding: 40px;
+      }
+
+      p7 {
+        color: whitesmoke;
+          font-family: "gabriella", sans-serif;
+          text-shadow: -7px 7px #2b2b2b;
+          -webkit-text-stroke: 2px black;
+          font-size: 50px;
+          position: absolute;
+          top: 1600px;
+          left: 28px;
+      }
+
+      p8 {
+        background-color: whitesmoke;
+        border: 2px solid #111;
+        padding: 3px;
+        position: absolute;
+        top: 1700px;
+        font-weight: bold;
+        font-family: "Roboto Mono", sans-serif;
+        font-size: 25px;
+        left: 20px;
+      }
+      p9 {
+        position: absolute;
+        top: 1730px;
+        left: 50px;
+        font-family: "Roboto Mono", sans-serif;
+        font-size: 20px;
+        padding: 20px;
+      }
+      p10 {
+        background-color: whitesmoke;
+        border: 2px solid #111;
+        padding: 3px;
+        position: absolute;
+        top: 1850px;
+        font-weight: bold;
+        font-family: "Roboto Mono", sans-serif;
+        font-size: 25px;
+        left: 20px;
+      }
+      p11 {
+        position: absolute;
+        top: 1880px;
+        left: 50px;
+        font-family: "Roboto Mono", sans-serif;
+        font-size: 20px;
+        padding: 20px;
+      }
+      p12 {
+        background-color: whitesmoke;
+        border: 2px solid #111;
+        padding: 3px;
+        position: absolute;
+        top: 2000px;
+        font-weight: bold;
+        font-family: "Roboto Mono", sans-serif;
+        font-size: 25px;
+        left: 20px;
+      }
+      p13 {
+        position: absolute;
+        top: 2030px;
+        left: 50px;
+        font-family: "Roboto Mono", sans-serif;
+        font-size: 20px;
+        padding: 20px;
+      }
+      p14 {
+        background-color: whitesmoke;
+        border: 2px solid #111;
+        padding: 3px;
+        position: absolute;
+        top: 2150px;
+        font-weight: bold;
+        font-family: "Roboto Mono", sans-serif;
+        font-size: 25px;
+        left: 20px;
+      }
+      p15 {
+        position: absolute;
+        top: 2180px;
+        left: 50px;
+        font-family: "Roboto Mono", sans-serif;
+        font-size: 20px;
+        padding: 20px;
+      }
+      p16 {
+        border: 2px solid #111;
+        background-color: whitesmoke;
+        text-align: center;
+        position: absolute;
+        top: 130px;
+        left:290px;
+        font-family: "Roboto Mono", sans-serif;
+        font-size: 40px;
+        padding: 20px;
+      }
+      p17 {
+        position: absolute;
+        top: 2300px;
+        font-size: 100px;
+        font-weight:lighter
+      }
+      p18 {
+        color: whitesmoke;
+          font-family: "gabriella", sans-serif;
+          text-shadow: -7px 7px #2b2b2b;
+          -webkit-text-stroke: 2px black;
+          font-size: 50px;
+          position: absolute;
+          top: 2300px;
+          left: 28px;
+      }
+      p19 {
+        background-color: whitesmoke;
+        border: 2px solid #111;
+        right: 40px;
+        position: absolute;
+        top: 2400px;
+        font-family: "Roboto Mono", sans-serif;
+        font-size: 25px;
+        left: 40px;
+        line-height: 40px;
+        padding: 20px;
+      }
+      pfinal {
+        position: absolute;
+        top: 3300px;
+        left: 230px;
+        font-family: "Roboto Mono", sans-serif;
+        font-size: 20px;
+        padding: 100px;
+      }
+      }
+
+
+/* BACKGROUND */
+      body {
+          /* #fff6e2 */
+          background-color: #fff6e2;
+          background-image: url("https://www.transparenttextures.com/patterns/inflicted.png");
+      }
+
+
+/* LETTER ANIMATIONS */
+      .bounce { 
+                  animation-name: bounce; 
+              } 
+        
+      .bouncing-letters span { 
+          animation-timing-function: linear; 
+          animation-duration: 1s; 
+          animation-iteration-count: 1; 
+          display: inline-block; 
+      } 
+  
+      .bouncing-letters span:hover { 
+          color: whitesmoke; 
+      } 
+      @keyframes bounce { 
+
+        40% { 
+            transform: scale(1.25, 1.5); 
+        } 
+
+        90% { 
+            transform: scale(1, 1); 
+        } 
+      } 
+
+
+/* 'hi my name is' */
+      p1 {
+          background-color: whitesmoke;
+          border: 2px solid #111;
+          color: black;
+          font-family: "Roboto Mono", sans-serif;
+          letter-spacing: 3px;
+          font-size: 30px;
+          position: absolute;
+          top: 200px;
+          left: 30px;
+          opacity: 100%;
+      }
+
+
+/* 'animated projects' */
+      p2 {
+          color: whitesmoke;
+          font-family: "gabriella", sans-serif;
+          text-shadow: -7px 7px #2b2b2b;
+          -webkit-text-stroke: 2px black;
+          font-size: 50px;
+          position: absolute;
+          top: 3000px;
+          left: 28px;
+      }
+
+
+/* 'programming projects' */
+      p4 {
+          color: whitesmoke;
+          font-family: "gabriella", sans-serif;
+          text-shadow: -7px 7px #2b2b2b;
+          -webkit-text-stroke: 2px black;
+          font-size: 50px;
+          position: absolute;
+          top: 800px;
+          left: 28px;
+      }
+
+
+/* bio */
+      p5 {
+          background-color: whitesmoke;
+          border: 2px solid #111;
+          color: black;
+          font-family: "Roboto Mono", sans-serif;
+          font-size: 30px;
+          letter-spacing: 3px;
+          position: absolute;
+          top: 635px;
+          left: 30px;
+          right: 175px;
+      }
+
+
+/* VIDEOS */
+      .video {
+          position:absolute;
+          top: 3100px;
+          left: 30px;
+          border: 10px black;
+      }
+      .video2 {
+          position:absolute;
+          top: 3100px;
+          left: 600px;
+      }
+
+
+/* TAB BAR */
+      /* .topnav {
+        overflow: hidden;
+        background-color: #333;
+      }
+
+      .topnav a {
+        float: left;
+        color: whitesmoke;
+        font-family: "gabriella", sans-serif;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+        font-size: 17px;
+      }
+
+      .topnav a:hover {
+        background-color: #fff6e2;
+        color: #2b2b2b;
+      }
+
+      .topnav a.active {
+        background-color: #fff6e2;
+        color: #2b2b2b;
+      } */
+
+      
+/* PICTURE OF ME */
+      /* .container {
+        position: relative;
+      } */
+
+      /* .overlap-image {
+        position: absolute;
+        top: 0px; 
+        left: 1050px;
+        z-index: 1;
+      } */
+      /* img {
+        border: 3px solid #2b2b2b;
+      } */
+
+/* RECTANGLES */
+      svg {
+        position: absolute;
+        top: 300px;
+        left: 10px;
+        background-color: #FF1493;
+        /* transform: rotate(-40deg); */
+        z-index: 0;
+      }
+
+
+/* STARS */
+
+.lrightstar {
+  position: absolute; /* Position the stars relative to their containing element */
+  top: 170px;
+  left: 820px;
+  transform: rotate(-90deg);
+}
+.lrightstarf {
+    position: absolute; /* Position the stars relative to their containing element */
+    top: 170px;
+    left: 820px;
+    transform: rotate(-90deg);
+    }
+
+.lmidstar {
+    position: absolute;
+    top: 130px;
+    left: 985px;
+    transform: rotate(90deg);
+  
+}
+.lmidstarf {
+    position: absolute;
+    top: 130px;
+    left: 985px;
+    transform: rotate(90deg);
+  
+}
+
+.lleftstar {
+    position: absolute;
+    top: 280px;
+    left: 1120px;
+    transform: rotate(90deg);
+}
+.lleftstarf {
+    position: absolute;
+    top: 280px;
+    left: 1120px;
+    transform: rotate(90deg);
+}
+</style>
+</head>
+
+<svg class="rectangle3"width="200" height="30" xmlns="http://www.w3.org/2000/svg" style="position: absolute; top: 60px; left: 975px;" opacity="70%" z-index="2;">
+  <rect width="1400" height="120" fill="#f7f7f7" stroke="#2b2b2b" stroke-width="0" opacity="70%"/>
+</svg>
+<svg class="rectangle4"width="180" height="30" xmlns="http://www.w3.org/2000/svg" style="position: absolute; top: 60px; left: 1235px;" opacity="70%" z-index="2;">
+  <rect width="1400" height="120" fill="#f7f7f7" stroke="#2b2b2b" stroke-width="0" opacity="70%"/>
+</svg>
+
+<div class="container5" id="section1">
+<button class="button-56" role="button" onClick="document.getElementById('bottom').scrollIntoView();">CONTACT</button>
+<button class="button-57" role="button" onClick="document.getElementById('middle').scrollIntoView();">ABOUT ME</button>
+<button class="button-58" role="button">HOME</button>
+</div>
+
+
+<!-- RECTANGLES -->
+      <!-- <svg width="100" height="30" xmlns="http://www.w3.org/2000/svg">
+          <rect width="100" height="30" fill="#f7f7f7" stroke="#2b2b2b" stroke-width="5" />
+      </svg>
+      <svg width="100" height="30" xmlns="http://www.w3.org/2000/svg" style="position: absolute; top: 350px; left: 1320px;">
+          <rect width="100" height="30" fill="#f7f7f7" stroke="#2b2b2b" stroke-width="5" />
+        </svg> -->
+        <svg class='rectangle' width="1050" height="120" xmlns="http://www.w3.org/2000/svg" opacity="70%">
+          <rect width="1050" height="120" fill="#f7f7f7" stroke="#2b2b2b" stroke-width="0" opacity="70%"/>
+        </svg>
+        <svg class="rectangle2"width="1400" height="120" xmlns="http://www.w3.org/2000/svg" style="position: absolute; top: 490px; left: 10px;" opacity="70%">
+          <rect width="1400" height="120" fill="#f7f7f7" stroke="#2b2b2b" stroke-width="0" opacity="70%"/>
+        </svg>
+        
+
+
+<h3>
+    <!-- TAB BAR AT TOP -->
+    <!-- <div class="topnav">
+    <a class="active" href="#home">Home</a>
+    <a href="#news">About Me</a>
+    <a href="#contact">Contact</a>
+    <a href="#about">About</a>
+    </div> -->
+    <!-- END OF TAB BAR AT TOP -->
+</h3>
+<!-- 
+<span class="lmidstarf" style="font-size:1000%;color:#fff6e2;">&starf;</span>
+<span class="lleftstarf" style="font-size:750%;color:#fff6e2;">&starf;</span>
+<span class="lrightstarf" style="font-size:750%;color:#fff6e2;">&starf;</span>
+<span class="lmidstarf" style="font-size:1000%;color:#2b2b2b;">&star;</span>
+<span class="lleftstarf" style="font-size:750%;color:#2b2b2b;">&star;</span>
+<span class="lrightstarf" style="font-size:750%;color:#2b2b2b;">&star;</span> -->
+<!-- picture of me -->
+<!-- <div class="container">
+    <img src="newme.png" 
+    alt="Image" 
+    class="overlap-image"
+    width="330"
+    hight="300"> -->
+<p class="heart"><p>
+
+  <div class="container2" id="section1">  
+  <p1>  Hi, my name is </p1>
+  </div>
+  
+  <div class="container3">
+  <h2 class="bouncing-letters"> 
+          <span>M</span> 
+          <span>A</span> 
+          <span>K</span> 
+          <span>E</span> 
+          <span>N</span> 
+          <span>N</span> 
+          <span>A</span><br>
+          <span>L</span>   
+          <span>O</span> 
+          <span>E</span> 
+          <span>W</span>
+          <span>E</span>
+          <span>N</span>
+          <span>H</span>
+          <span>E</span> 
+          <span>R</span> 
+          <span>Z</span>
+          <span>.</span>   
+</h2> 
+</div>
+
+<!-- <p2>________________________________________________</p2> -->
+
+<!-- <p>Hello. My name is listed above. I am a Junior at the University of Kansas studying Computer Science. I had no idea I would be so interested in programming and web design going into college. I was actually a declared math a major. But with a little push from friends and some self discovery I am now down the path to eventually become.. a data scientist? Web designer? I ma not actually sure yet.  </p> -->
+
+<script> 
+  document.querySelectorAll(".bouncing-letters>span") 
+  .forEach((element) => { 
+      element.addEventListener("mouseover",  
+                               (e) => bounce(e.target)); 
+  }); 
+
+  function bounce(letter) { 
+      if (!letter.classList.contains("bounce")) { 
+          letter.classList.add("bounce"); 
+          setTimeout( 
+              function () { 
+                  letter.classList.remove("bounce"); 
+              }, 
+              1000 
+          ); 
+      } 
+  } 
+</script> 
+
+<dev class="container4">
+<!-- <p5>I am junior at the University of Kansas studying computer science. I am passionate about creativity and design.</p5> -->
+<!-- <p5>!!!!!!</p5> -->
+</dev>
+
+<div id="section1">
+<p4 id='middle'>Bio. </p4>
+<p6>
+  Hello! 
+  I'm Makenna Loewenherz, a <span class="bolded">junior majoring in computer science</span> at the University of Kansas. 
+  Artistry has been a lifelong passion of mine, and I've discovered that web development has been a great way to continue my love for creativity and design. 
+  Beyond that, I am interested in expanding my knowledge of software engineering and data analytics because I have natural aptitude for mathematics. 
+  My proficiency extends to various programming languages, complemented by hands-on experience with several Adobe applications.<br><br>
+  
+  While I'm still building my experience in the industry, I am confident that my commitment to enhancing my technical skills will position me as a valuable member of any workplace team.
+  I carry with me a <span class="bolded">positive attitude</span>, effective <span class="bolded">time management</span>, and excellent <span class="bolded">communication skills</span> that I believe will be very useful in any professional setting.
+</p6>
+
+<p7 >Skills. </p7>
+<p8>Languages: Python, Javascript, C++</p8>
+<p9>
+  Proficient in Python, capable of developing efficient and clean solutions for various tasks. Skilled in JavaScript with experience in JavaScript functions and classes. Basic understanding of C++ with a year of experience through undergraduate classes.
+</p9>
+<p10>Front-End Development: HTML and CSS</p10>
+<p11>
+  Proficient in HTML and CSS. Capable of creating visually appealing web pages that implement JavaScript functions. 
+</p11>
+<p12>Object-Oriented Programming:</p12>
+<p13>
+  Mastery in object-oriented programming principles, facilitating the development of modular, scalable, and maintainable code structures.
+</p13>
+<p14>Adobe Software: Adobe Illustrator, Adobe Photoshop</p14>
+<p15>
+  Proficient in using Adobe software for creative design and multimedia content creation. Experience in graphic design and animated projects. 
+</p15>
+
+<p18>Projects. </p18>
+<p19>
+  ★ This website! My portfolio is actually my first big independent project, you can check out its github repository <a href="https://github.com/makennabrynn/my_portfolio" target="_blank">here</a>.<br>
+  ★ I have learned a lot from this experience already about css design and implementing javascript functions.
+</p19>
+
+
+<div class="rect">
+<p17 id="bottom"></p17>
+<p16>LETS CHAT<br>
+<a href="mailto:makennaloewenherz@gmail.com">makennaloewenherz@gmail.com</a><br>
+(913) 608-1981<br>
+<a href="https://www.linkedin.com/in/makenna-loewenherz-10a37520a/" target="_blank">LinkedIn</a>
+</p16>
+</div>
+
+
+<!-- <p7 id='middle'>Projects. </p7> -->
+
+<!-- <p2>Animated Projects.</p2>
+<iframe style="border:5px solid #2b2b2b;" class="video" width="420" height="315" src="https://www.youtube.com/embed/THRJ3F1vM-U?si=oxWfIgzPVF7ehGsp&t=1"></iframe>
+<iframe style="border:5px solid #2b2b2b;" class="video2" width="420" height="315" src="https://www.youtube.com/embed/k0Z9Veu0kGk?si=wmbtmauyp4r3qd4r"></iframe> -->
+
+<pfinal> Thank you so much for taking the time to visit my website! :) </pfinal>
+
+</html>
